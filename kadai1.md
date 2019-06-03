@@ -27,23 +27,26 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 とする．1/4サンプリングの結果を図３に示す．
 
-![原画像](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_2.png?raw=true)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image001/003.png)  
 図3 1/4サンプリング
 
-1/8から1/32サンプリングは，
+1/8から1/64サンプリングは，
 
 IMG = imresize(ORG,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
-を繰り返す．サンプリングの結果を図４～６に示す．
+を繰り返す．サンプリングの結果を図４～７に示す．
 
-![原画像](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_3.png?raw=true)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image001/004.png)  
 図4 1/8サンプリング
 
-![原画像](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_4.png?raw=true)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image001/005.png)  
 図5 1/16サンプリング
 
-![原画像](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_5.png?raw=true)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image001/006-1.png)  
 図6 1/32サンプリング
+
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image001/006-1.png)  
+図7 1/64サンプリング
 
 このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生する．
