@@ -1,18 +1,15 @@
 # 課題2　レポート
 
-標準画像「therock2」を原画像とする．この画像は縦512画像，横512画素による正方形のディジタルカラー画像である．
+標準画像「therock2」を原画像とする．この画像は縦717画像，横518画素による長方形のディジタルカラー画像である．
 
 ORG=imread('therock2.png'); % 原画像の入力
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
-imagesc(ORG); axis image; % 画像の表示
+ORG = rgb2gray(ORG); 
+imagesc(ORG); colormap(gray); colorbar;  axis image; % 画像の表示
 pause; % 一時停止
 
-によって，原画像を読み込み，
-グレースケール イメージに変換し
-gray カラーマップを割り当て
-カラー バーを追加し
+によって,現画像を読み込み,グレースケール化し,カラーバーを追加したものを図1に示す.
 
-表示した結果を図１に示す．
+
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/001.png)  
 図1 原画像
