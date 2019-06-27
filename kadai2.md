@@ -11,20 +11,26 @@ pause; % 一時停止
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/001.png)  
-図1 原画像
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2001.jpg)  
+図1 グレースケール化原画像（カラーバー追加）
 
-原画像を1/2サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．なお，拡大する際には，単純補間するために「box」オプションを設定する．
+２階調画像を生成するには，輝度値の最大値は255なので，0-255の値を2つにわければよい。
+よって、0-128と、129-255の2つに分割する。
+以上より2階調化した画像を図3に示す．
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
+IMG = ORG>128;%　画像を輝度値128にて分ける
+imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-1/2サンプリングの結果を図２に示す．
+以上より2階調化した結果を図3に示す．
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/002.png)  
-図2 1/2サンプリング
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2002.jpg)  
+図2 ２階調画像の生成
 
-同様に原画像を1/4サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．すなわち，
+同様に４階調画像を生成には，輝度値の最大値255を四分割し、
+
+
+
+
 
 IMG = imresize(ORG,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
