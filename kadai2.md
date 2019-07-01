@@ -9,14 +9,13 @@ pause; % 一時停止
 
 によって,現画像を読み込み,グレースケール化し,カラーバーを追加したものを図1に示す.
 
-
-
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2001.jpg)  
 図1 グレースケール化原画像（カラーバー追加）
 
-２階調画像を生成するには，輝度値の最大値は255なので，0-255の値を2つにわければよい。
-よって、0-128と、129-255の2つに分割する。
-以上より2階調化した画像を図3に示す．
+
+
+２階調画像を生成するには，輝度値の0-255の値を2つにわければよい。
+よって、0-128と、129-255の2つに分割する。すなわち
 
 IMG = ORG>128;%　画像を輝度値128にて分ける
 imagesc(IMG); colormap(gray); colorbar;  axis image;
@@ -25,6 +24,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2002.jpg)  
 図2 ２階調画像
+
+
 
 同様に４階調画像を生成には，輝度値の0-255を4分割すればよい。
 0-64,65-128,129-192,193-255の様に分ける。すなわち
@@ -36,11 +37,11 @@ IMG2 = ORG>192;
 IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-
 とする．４階調画像の生成結果を図３に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2003.jpg)  
 図3 ４階調画像
+
 
 
 さらに同様に8階調画像を生成には，輝度値の0-255を8分割すればよい。
