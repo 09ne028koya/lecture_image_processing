@@ -24,39 +24,43 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 以上より2階調化した結果を図3に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2002.jpg)  
-図2 ２階調画像の生成
+図2 ２階調画像
 
-同様に４階調画像を生成には，輝度値の最大値255を四分割し、
+同様に４階調画像を生成には，輝度値の0-255を4分割すればよい。
+0-64,65-128,129-192,193-255の様に分ける。すなわち
+
+% ４階調画像の生成
+IMG0 = ORG>64;
+IMG1 = ORG>128;
+IMG2 = ORG>192;
+IMG = IMG0 + IMG1 + IMG2;
+imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 
+とする．４階調画像の生成結果を図３に示す．
+
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2003.jpg)  
+図3 ４階調画像
 
 
+さらに同様に8階調画像を生成には，輝度値の0-255を8分割すればよい。
+0-32,33-64,65-96,97-128,129-160,161-192,193-224,225-255の様に分ける。すなわち
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
+% 8階調画像の生成
+IMG0 = ORG>32;
+IMG1 = ORG>64;
+IMG2 = ORG>96;
+IMG3 = ORG>128;
+IMG4 = ORG>160;
+IMG5 = ORG>192;
+IMG6 = ORG>224;
+IMG = IMG0 + IMG1 + IMG2 + IMG3+ IMG4 + IMG5 + IMG6;
+imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-とする．1/4サンプリングの結果を図３に示す．
+とする．8階調画像の生成結果を図4に示す．
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/003.png)  
-図3 1/4サンプリング
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2004.jpg)  
+図4 8階調画像
 
-1/8から1/64サンプリングは，
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
-
-を繰り返す．サンプリングの結果を図４～７に示す．
-
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/004.png)  
-図4 1/8サンプリング
-
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/005.png)  
-図5 1/16サンプリング
-
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/006.png)  
-図6 1/32サンプリング
-
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/007.png)  
-図7 1/64サンプリング
-
-このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生する．
+このように諧調を上げるごとに画像は鮮明になっていく.
