@@ -28,10 +28,10 @@ pause;
 % ８階調画像の生成
 IMG0 = ORG>32;
 IMG1 = ORG>64;
-IMG2 = ORG>128;
-IMG3 = ORG>160;
-IMG4 = ORG>192;
-IMG5 = ORG>224;
-IMG6 = ORG>256;
+IMG2 = ORG>96;
+IMG3 = ORG>128;
+IMG4 = ORG>160;
+IMG5 = ORG>192;
+IMG6 = ORG>224;
 IMG = IMG0 + IMG1 + IMG2 + IMG3+ IMG4 + IMG5 + IMG6;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
