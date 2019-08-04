@@ -12,3 +12,4 @@ imagesc(ORG); colormap(gray); colorbar;  axis image;
 pause;
 
 imhist(ORG); % ヒストグラムの表示
+
