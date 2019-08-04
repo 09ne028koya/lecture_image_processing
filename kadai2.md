@@ -28,6 +28,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 
 
+
+
 同様に４階調画像を生成には，輝度値の0-255を4分割すればよい。
 0-64,65-128,129-192,193-255の様に分ける。すなわち
 
@@ -42,6 +44,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2003.jpg)  
 図3 ４階調画像
+
 
 
 
@@ -63,6 +66,9 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2004.jpg)  
 図4 8階調画像
+
+
+
 
 
 このように諧調を上げるごとに画像は鮮明になっていく.
