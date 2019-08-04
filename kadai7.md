@@ -6,7 +6,7 @@ ORG=imread('Schwarzenegger7.jp'); % 原画像の入力 ORG = rgb2gray(ORG); % �
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/7001.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/7001.jpg)  
 図1 原画像
 
 ダイナミックレンジの拡大をするには濃度値の最小値から最大値の幅を広げればよい.
@@ -38,17 +38,17 @@ imhist(ORG); % 濃度ヒストグラムを生成、表示
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/7002.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/7002.jpg)  
 図2 原画像の濃度ヒストグラム
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/7003.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/7003.jpg)  
 図3 ダイナミックレンジを拡大した画像
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/7004.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/7004.jpg)  
 図4 ダイナミックレンジを拡大の濃度ヒストグラム
 
 
