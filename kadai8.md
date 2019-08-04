@@ -1,6 +1,6 @@
 # 課題8  レポート
 
-標準画像「Schwarzenegger8.jpg」を原画像とする．この画像は縦755画像，横755画素による正方形のディジタルカラー画像である．
+標準画像「Schwarzenegger8.jpg」を原画像とする．この画像は縦321画像，横321画素による正方形のディジタルカラー画像である．
 
 ORG=imread('Schwarzenegger8.jpg'); % 原画像の入力
 ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
