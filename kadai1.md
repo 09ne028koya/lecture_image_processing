@@ -35,7 +35,8 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 IMG = imresize(ORG,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
-を繰り返す．サンプリングの結果を図４～７に示す．
+を繰り返す．
+サンプリングの結果を図４～７に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/004.png)  
 図4 1/8サンプリング
