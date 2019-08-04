@@ -1,20 +1,20 @@
-% ‰Û‘è7@ƒ_ƒCƒiƒ~ƒbƒNƒŒƒ“ƒW‚ÌŠg‘å
-% ‰æ‘f‚Ìƒ_ƒCƒiƒ~ƒbƒNƒŒƒ“ƒW‚ğ‚O‚©‚ç‚Q‚T‚T‚É‚¹‚æD 
-% ‰º‹L‚ÍƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚Å‚ ‚éD 
-% ‰Û‘èì¬‚É‚ ‚½‚Á‚Ä‚ÍuLennavˆÈŠO‚Ì‰æ‘œ‚ğ—p‚¢‚æD 
-% —á
+% èª²é¡Œ7ã€€ãƒ€ã‚¤ãƒŠãƒŸãƒƒã‚¯ãƒ¬ãƒ³ã‚¸ã®æ‹¡å¤§
+% ç”»ç´ ã®ãƒ€ã‚¤ãƒŠãƒŸãƒƒã‚¯ãƒ¬ãƒ³ã‚¸ã‚’ï¼ã‹ã‚‰ï¼’ï¼•ï¼•ã«ã›ã‚ˆï¼ 
+% ä¸‹è¨˜ã¯ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã§ã‚ã‚‹ï¼ 
+% èª²é¡Œä½œæˆã«ã‚ãŸã£ã¦ã¯ã€ŒLennaã€ä»¥å¤–ã®ç”»åƒã‚’ç”¨ã„ã‚ˆï¼ 
+% ä¾‹
 
-ORG = imread('Lenna.jpg'); % ‰æ‘œ‚Ì“Ç‚İ‚İ
-ORG = rgb2gray(ORG); % ”’•”Z’W‰æ‘œ‚É•ÏŠ·
-imagesc(ORG); colormap(gray); colorbar; % ‰æ‘œ‚Ì•\¦
+ORG = imread('Schwarzenegger7.jpg'); % ç”»åƒã®èª­ã¿è¾¼ã¿
+ORG = rgb2gray(ORG); % ç™½é»’æ¿ƒæ·¡ç”»åƒã«å¤‰æ›
+imagesc(ORG); colormap(gray); colorbar;  axis image; % ç”»åƒã®è¡¨ç¤º
 pause;
-imhist(ORG); % ”Z“xƒqƒXƒgƒOƒ‰ƒ€‚ğ¶¬A•\¦
+imhist(ORG); % æ¿ƒåº¦ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã‚’ç”Ÿæˆã€è¡¨ç¤º
 pause;
 ORG = double(ORG);
-mn = min(ORG(:)); % ”Z“x’l‚ÌÅ¬’l‚ğZo
-mx = max(ORG(:)); % ”Z“x’l‚ÌÅ‘å’l‚ğZo
+mn = min(ORG(:)); % æ¿ƒåº¦å€¤ã®æœ€å°å€¤ã‚’ç®—å‡º
+mx = max(ORG(:)); % æ¿ƒåº¦å€¤ã®æœ€å¤§å€¤ã‚’ç®—å‡º
 ORG = (ORG-mn)/(mx-mn)*255;
-imagesc(ORG); colormap(gray); colorbar; % ‰æ‘œ‚Ì•\¦
+imagesc(ORG); colormap(gray); colorbar;  axis image; % ç”»åƒã®è¡¨ç¤º
 pause;
-ORG = uint8(ORG); % ‚±‚Ìs‚É‚Â‚¢‚Äl@‚¹‚æ
-imhist(ORG); % ”Z“xƒqƒXƒgƒOƒ‰ƒ€‚ğ¶¬A•\¦
+ORG = uint8(ORG); % ã“ã®è¡Œã«ã¤ã„ã¦è€ƒå¯Ÿã›ã‚ˆ
+imhist(ORG); % æ¿ƒåº¦ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã‚’ç”Ÿæˆã€è¡¨ç¤º
