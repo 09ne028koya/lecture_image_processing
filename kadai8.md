@@ -30,12 +30,12 @@ pause;
 
 図3に連結要素をラベル付けした画像を示す.
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/8001.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/8002.jpg)  
 図2 閾値128で二値化した画像
 
 
 
-![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/8001.jpg)  
+![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/8003.jpg)  
 図3 連結要素をラベル付けした画像
 
 顔や背景が別のラベリングをされ分かれているのが分かる.
