@@ -21,7 +21,7 @@ pause; % 一時停止
 IMG = ORG>128;%　画像を輝度値128にて分ける
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-以上より2階調化した結果を図3に示す．
+とする.2階調化した結果を図2に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2002.jpg)  
 図2 ２階調画像
@@ -38,10 +38,10 @@ IMG2 = ORG>192;
 IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-とする．４階調画像の生成結果を図2に示す．
+とする．４階調画像の生成結果を図3に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2003.jpg)  
-図2 ４階調画像
+図3 ４階調画像
 
 
 
@@ -59,10 +59,10 @@ IMG6 = ORG>224;
 IMG = IMG0 + IMG1 + IMG2 + IMG3+ IMG4 + IMG5 + IMG6;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
-とする．8階調画像の生成結果を図3に示す．
+とする．8階調画像の生成結果を図4に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/2004.jpg)  
-図3 8階調画像
+図4 8階調画像
 
 
 このように諧調を上げるごとに画像は鮮明になっていく.
