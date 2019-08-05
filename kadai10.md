@@ -11,7 +11,7 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 によって，原画像を読み込み，カラー画像を白黒濃淡画像へ変換し,カラーバーを追加し,表示した結果を図１に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/10001.jpg)  
-図1 原画像
+図1 グレースケール化原画像（カラーバー追加）
 
 
 プレウィット法,ソベル法,キャニー法を用いてエッジ抽出を行う.よって,
