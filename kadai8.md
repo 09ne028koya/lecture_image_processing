@@ -13,7 +13,7 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 によって，原画像を読み込み，カラー画像を白黒濃淡画像へ変換し,カラーバーを追加し,表示した結果を図１に示す．
 
 ![原画像](https://raw.githubusercontent.com/09ne028koya/lecture_image_processing/master/image/8001.jpg)  
-図1 原画像
+図1 グレースケール化原画像（カラーバー追加）
 
 二値化された画像の連結成分にラベルをつけるには,白の部分（または黒の部分）が連続した画素に同じ番号を割り振る処理を行えばよい.
 すなわち,
